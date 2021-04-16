@@ -17,30 +17,30 @@ def divide(x, y):
     return x / y
 
 print("Select operation.")
-print("1. Add")
-print("2. Subtract")
-print("3. Multiply")
-print("4. Divide")
+print("0. Add")
+print("1. Subtract")
+print("2. Multiply")
+print("3. Divide")
 
 while True:
     # Take input from the user
-    choice = input("Enter choice(1/2/3/4): ")
+    choice = input("Enter choice(0/1/2/3): ")
 
     # Check if choice is one of the four options
-    if choice in ('1', '2', '3', '4'):
+    if choice in ('0', '1', '2', '3'):
         num1 = float(input("Enter first number: "))
         num2 = float(input('Enter second number: '))
 
-        if choice == '1': 
+        if choice == '0': 
             print(num1, "+", num2, "=", add(num1,num2))
 
-        elif choice == '2':
+        elif choice == '1':
             print(num1, '-', num2, '=', subtract(num1, num2))
 
-        elif choice == '3':
+        elif choice == '2':
             print(num1, '*', num2, '=', multiply(num1, num2))
 
-        elif choice == '4':
+        elif choice == '3':
             print(num1, '/', num2, '=', divide(num1, num2))
         break
     else:
